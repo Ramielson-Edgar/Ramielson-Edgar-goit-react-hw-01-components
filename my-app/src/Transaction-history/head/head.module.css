@@ -1,0 +1,20 @@
+.item {
+    width:  500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: teal;
+
+    
+}
+.value{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:  167px;
+    height: 50px; 
+    color: white;
+    border-right: 1px solid rgb(255, 255, 255);
+    font-size: 13px;
+}

@@ -1,0 +1,43 @@
+.stats {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    left: 0px;
+    bottom: 0px;
+    background-color: #F3F6F9;
+}
+
+
+.listItem,.listItemCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 73px;
+    border: 1px solid #E9E9E9;
+ 
+}
+
+.listItemCenter {
+    width: 80px;
+    height: 73px;
+
+}
+
+.label {
+    position: absolute;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: gray;
+}
+
+.quantity {
+    position: absolute;
+    padding-top: 30px;
+    font-size: 15px;
+    color:#1F3349;
+}
+
+
