@@ -9,7 +9,7 @@ import FriendsListitem from "../FriendListItem/FriendsListitem";
 function FriendsList({ friends }) {
   return (
     <ul className={s.friendList}>
-      {friends.map(({ id, avatar, name, isOnline = true }) => (
+      {friends.map(({ id, avatar, name, isOnline }) => (
         <FriendsListitem
           key={id}
           avatar={avatar}

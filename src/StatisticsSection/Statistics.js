@@ -13,7 +13,7 @@ export default function Statistics({ title, stats }) {
   const isBigger = stats.length > 5;
   return (
     <section className={s.statistics}>
-      <h2 className={s.title}>{title ? title : null}</h2>
+      <h2 className={s.title}>{title ? title : ""}</h2>
 
       <LiFlexWrap sum={isBigger}>
         {stats.map((stat) => (

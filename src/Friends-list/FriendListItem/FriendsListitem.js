@@ -12,13 +12,13 @@ border-radius: 100px;
 background-color: ${(props) => (props.status ? "green" : "red")}
 `;
 
-function FriendListItem({ id, avatar, name, isOnline = true }) {
+function FriendListItem({ id, avatar, name, isOnline }) {
   const inOnline = isOnline ? true : false;
 
   return (
     <div className="wrapper">
       <li key={id} className={s.item}>
-        <StatusColor status={inOnline}></StatusColor>
+        <StatusColor status={inOnline} />
         <img className={s.imgSrc} src={avatar} alt="user" width="48" />
         <p className={s.name}>{name}</p>
       </li>
