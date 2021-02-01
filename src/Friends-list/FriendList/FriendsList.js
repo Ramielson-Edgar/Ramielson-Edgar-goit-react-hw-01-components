@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 import s from "./friendsList.module.css";
 import FriendsListitem from "../FriendListItem/FriendsListitem";
 
-// <!-- Произвольное кол-во FriendListItem, в зависимости от кол-ва объектов в массиве -->
-
 function FriendsList({ friends }) {
   return (
     <ul className={s.friendList}>

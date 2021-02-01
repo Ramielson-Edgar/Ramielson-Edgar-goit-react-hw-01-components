@@ -1,6 +1,6 @@
 import React from "react";
 
-import Description from "./Profile/Profile-social-network";
+import Profile from "./Profile/Profile-social-network";
 import user from "./Profile/user.json";
 
 import data from "./StatisticsSection/stats.json";
@@ -18,11 +18,12 @@ function App() {
   return (
     <>
       <Container>
-        <Description
-          user={user}
-          followers={user.stats.followers}
-          views={user.stats.views}
-          likes={user.stats.likes}
+        <Profile
+          name={user.name}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
         />
       </Container>
 

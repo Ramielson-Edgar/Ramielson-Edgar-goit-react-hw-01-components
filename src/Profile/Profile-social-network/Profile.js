@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import s from "./description.module.css";
 
-export default function Description({ user, followers, likes, views }) {
-  const { avatar, name, location, tag } = user;
+export default function Profile({ name, tag, location, avatar, stats }) {
+  const { views, likes, followers } = stats;
   return (
     <>
       <div className={s.description}>
         <img src={avatar} alt="Аватар пользователя" className={s.avatar} />
 
-        <p className={s.name}>
+        <p className={s.title}>
           <strong>{name}</strong>
         </p>
 
@@ -42,13 +42,13 @@ export default function Description({ user, followers, likes, views }) {
   );
 }
 
-Description.defaultProps = {
+Profile.defaultProps = {
   avatar:
     "https://dummyimage.com/640x480/2a2a2a/ffffff&text=Product+image+placeholder",
   name: "Незнакомец",
 };
 
-Description.propTypes = {
+Profile.propTypes = {
   user: PropTypes.arrayOf(
     PropTypes.shape({
       avatar: PropTypes.string,
